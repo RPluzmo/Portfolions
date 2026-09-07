@@ -1,6 +1,5 @@
 <?php 
 require "components/header.php";
-require "components/navbar.php";
 ?>
 
 <h1>404... Lapa nav atrasta</h1>

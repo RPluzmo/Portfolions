@@ -1,5 +1,5 @@
 <?php
 
-$pageTitle = "q";
+$pageTitle = "Tavs vārds | Portfolio";
 require "views/index.view.php";
 ?>
