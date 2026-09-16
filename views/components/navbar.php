@@ -1,7 +1,7 @@
 <header class="site-header">
     <nav class="main-nav" aria-label="Galvenā navigācija">
-        <a href="/#par-mani">Par mani</a>
-        <a href="/#prasmes">Prasmes</a>
-        <a href="/#projekti">Projekti</a>
+        <a href="<?= e(url("/#par-mani")) ?>">Par mani</a>
+        <a href="<?= e(url("/#prasmes")) ?>">Prasmes</a>
+        <a href="<?= e(url("/#projekti")) ?>">Projekti</a>
     </nav>
 </header>

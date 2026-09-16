@@ -1,10 +1,44 @@
-.hero-side { color: var(--ink); }
-.hero-side span { color: var(--coral); }
-.project-card { color: var(--ink); display: block; }
-.project-card h3 { transition: color .25s ease; }
-.project-card:hover h3, .project-card:focus-visible h3 { color: var(--coral); }
-.project-visual { transition: transform .3s ease; }
-.project-card:hover .project-visual, .project-card:focus-visible .project-visual { transform: translateY(-5px); }
-.visual-window { transition: transform .35s ease; }
-.project-card:hover .visual-window, .project-card:focus-visible .visual-window { transform: rotate(0) scale(1.03); }
-.project-two:hover .visual-window, .project-two:focus-visible .visual-window { transform: rotate(0) scale(1.03); }
+.hero-side {
+  color: var(--ink);
+}
+
+.hero-side span {
+  color: var(--coral);
+}
+
+.project-card {
+  color: var(--ink);
+  display: block;
+}
+
+.project-card h3 {
+  transition: color .25s ease;
+}
+
+.project-card:hover h3,
+.project-card:focus-visible h3 {
+  color: var(--coral);
+}
+
+.project-visual {
+  transition: transform .3s ease;
+}
+
+.project-card:hover .project-visual,
+.project-card:focus-visible .project-visual {
+  transform: translateY(-5px);
+}
+
+.visual-window {
+  transition: transform .35s ease;
+}
+
+.project-card:hover .visual-window,
+.project-card:focus-visible .visual-window {
+  transform: rotate(0) scale(1.03);
+}
+
+.project-two:hover .visual-window,
+.project-two:focus-visible .visual-window {
+  transform: rotate(0) scale(1.03);
+}

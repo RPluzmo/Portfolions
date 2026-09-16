@@ -3,33 +3,44 @@
 
 <main>
 	<section class="hero section" id="sakums">
+		<div class="hero-background" aria-hidden="true">
+			<canvas class="hero-stars"></canvas>
+		</div>
 		<div class="hero-copy">
-			<p class="eyebrow">Programmēšanas tehniķis \ Cēsis</p>
+			<p class="eyebrow">Programmēšanas tehniķis</p>
 			<h1>Raivo Plužmo</h1>
-			<p>qqq.</p>
-			
+			<p class="hero-subtitle">Mans programmēšanas portfolio.</p>
+		</div>
+		<div class="hero-portrait">
+			<img
+				src="<?= e(url("/assets/images/hero-portrait.png")) ?>"
+				alt="attēls ar mani ;)"
+				data-optional-image
+			>
 		</div>
 		<div class="hero-side ">
-			<span>01</span>
+			<span>00</span>
 			<p>Portfolio<br>2026</p>
 		</div>
 	</section>
 	<section class="about section" id="par-mani">
 		<div class="section-intro">
-			<p class="eyebrow">
-				01 / Par mani
-			</p>
-			<h2>
-				Kas<br><em>es esmu.</em>
-			</h2>
+			<h3>01 / Par mani</h3>
+			<h2>Kas<br><em>es esmu.</em></h2>
 		</div>
 		<div class="about-content">
-			<p class="lead">
-				Mani sauc <strong>Raivo Plužmo</strong>. Mācos par programmēšanas tehniķi Vidzemes Tehnoloģiju un dizaina tehnikumā un vēlos tehnoloģijas padarīt par savu ikdienu.
-			</p>
-			<p>
-				Esmu uzklausīgs, iecietīgs un labprāt strādāju komandā. Man patīk uzdevumi, kuros varu soli pa solim atrast risinājumu, kā arī mācīties no pieredzējušākiem.
-			</p>
+			<h3 class="lead">
+				Mani sauc <b>Raivo Plužmo</b>, un esmu 4. kursa programmēšanas tehniķa students <b>Vidzemes Tehnoloģiju un dizaina tehnikumā</b>.<br><br>
+
+				Mani interesē <b>tehnoloģijas un programmēšana</b>, un vēlos savas zināšanas pārvērst praktiskos risinājumos. <b>Man patīk</b> mācīties, darot izmēģināt, kļūdīties, izprast problēmu un  atrast risinājumu.<br><br>
+			</h3>
+			<h3>
+    			<b>Ikdienā</b> esmu mierīgs un nosvērts, un man labi padodas patstāvīgs darbs. <br><br>
+				
+				Ja kaut ko nesaprotu, vispirms cenšos pats atrast atbildi un izprast problēmu. <b>Man</b> ir svarīgi, lai paveiktais darbs būtu ne tikai izdarīts, bet arī pārdomāts un vizuāli sakārtots. <br><br>
+				
+				Arī pie šķietami mazām detaļām cenšos piedomāt, jo <b>uzskatu</b>, ka gala rezultāts parāda attieksmi pret paveikto.
+			</h3>
 			<div class="about-facts">
 				<div>
 					<span>
@@ -51,31 +62,52 @@
 
 	<section class="skills section" id="prasmes">
 		<div class="section-intro">
-			<p class="eyebrow">02 / Tehnoloģijas</p>
+			<h3>02 / Tehnoloģijas</h3>
 			<h2>Manas<br><em>prasmes</em></h2>
-			<p>Prasmes, ko attīstu mācībās un savos projektos.</p>
+			<h3>Prasmes, ko attīstu mācībās un savos projektos.</h3>
 		</div>
 		<div class="skill-list reveal reveal-delay">
 			<div class="skill-row">
 				<span class="skill-number">01</span>
 				<div>
-					<h3>Programmēšanas valodsa</h3>
-					<p>HTML <b>~</b> CSS <b>~</b> JavaScript <b>~</b> PHP</p>
+					<h3>Programmēšanas valodas</h3>
+					<p>PHP <b>~</b> SQL <b>~</b> JavaScript <b>~</b></p>
 				</div>
 			</div>
 			<div class="skill-row">
 				<span class="skill-number">02</span>
 				<div>
 					<h3>Ietvari un bibliotēkas</h3>
-					<p>Laravel <b>~</b> React</p>
+					<p>Laravel <b>~</b> React <b>~</b> Leafet.js</p>
 				</div>
 		 </div>
 		 <div class="skill-row">
 			 <span class="skill-number">03</span>
 			 <div>
+				 <h3>Web tehnoloģijas</h3>
+				 <p>HTML <b>~</b> CSS</p>
+			 </div>
+		 </div>
+		 <div class="skill-row">
+			<span class="skill-number">04</span>
+				<div>
+					<h3>API un datu apstrāde</h3>
+					<p>REST API <b>~</b> JSON</p>
+				</div>
+			</div>
+		 <div class="skill-row">
+			<span class="skill-number">05</span>
+			 <div>
 				 <h3>Tehnoloģijas</h3>
 				 <p>MySQL datubāzes <b>~</b> Git versiju kontrole</p>
 			 </div>
+			</div>
+		<div class="skill-row">
+				<span class="skill-number">06</span>
+				<div>
+					<h3>Kartes un ģeodati</h3>
+					<p>OpenStreetMap integrācija</p>
+				</div>
 		 </div>
 	 </div>
  </section>
@@ -83,37 +115,32 @@
  <section class="projects section" id="projekti">
 	 <div class="projects-heading reveal">
 		 <div>
-			 <p class="eyebrow">03 / Izvēlētie darbi</p>
-			 <h2>Mani<br><em>projekti.</em></h2>
+			 <h3>03 / Izvēlētie darbi</h3>
+			 <h2>Mani <em>projekti.</em></h2>
 		 </div>
 	 </div>
-	 <div class="project-grid reveal reveal-delay">
-		 <a class="project-card project-one" href="/projekts1">
-			 <div class="project-visual">
-				 <span class="visual-label">Laravel / MySQL</span>
-
+	 <div class="project-grid reveal reveal-delay" aria-label="Projektu galerija">
+		 <?php foreach ($projects as $project): ?>
+			 <a
+				 class="project-card <?= $project["color"] ?>"
+				 href="<?= e(url($project["url"])) ?>"
+			 >
+				 <div class="project-visual">
+				 <?php $projectImagePath = __DIR__ . "/../assets/images/" . $project["image"]; ?>
+				 <?php if (is_file($projectImagePath)): ?>
+				 <img src="<?= e(url("/assets/images/" . $project["image"])) ?>" alt="<?= e($project["name"]) ?> Projekta titullapa" loading="lazy">
+				 <?php else: ?>
+				 <span class="image-fallback">Attēls nav pieejams ;[</span>
+				 <?php endif; ?>
 				 </div>
-			 </div>
-	
-				 <span>01 — Mysterymeal</span>
-				 <span class="project-open">Skatīt projektu ↗</span>
-			 </div>
-			 <h3>Projekts Nr. 01</h3>
-			 <p>mysterymeal</p>
-
-		 </a>
-
-		 <a class="project-card project-two" href="/projekts2">
-			<div class="project-visual">
-				<span class="visual-label">Laravel / MySQL</span>
-
-				</div>
-			</div>
-				<span>02 — EmEks</span>
-				<span class="project-open">Skatīt projektu ↗</span>
-			</div>
-			<h3>Projekts Nr. 02</h3>
-			<p>EmEks</p>
-		</a>
+				 <div class="project-meta">
+				 <span>Projekts - <?= e($project["number"]) ?></span>
+					 <span class="project-open">Apskatīt plašāk ↗</span>
+				 </div>
+				 <h3><?= e($project["name"]) ?></h3>
+				 <p><?= e($project["description"]) ?></p>
+			 </a>
+		 <?php endforeach; ?>
+	 </div>
 
 <?php require "views/components/footer.php"; ?>
