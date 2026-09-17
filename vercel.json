@@ -3,24 +3,21 @@
   "builds": [
     {
       "src": "index.php",
-      "use": "vercel-php@0.7.1",
-      "config": {
-        "includeFiles": [
-          "css/**",
-          "js/**",
-          "assets/**",
-          "views/**",
-          "controllers/**",
-          "functions.php",
-          "routes.php",
-          "router.php"
-        ]
-      }
+      "use": "vercel-php@0.7.1"
     }
   ],
   "routes": [
     {
-      "handle": "filesystem"
+      "src": "/css/(.*)",
+      "dest": "/css/$1"
+    },
+    {
+      "src": "/js/(.*)",
+      "dest": "/js/$1"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
     },
     {
       "src": "/(.*)",
