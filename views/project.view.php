@@ -1,5 +1,5 @@
-<?php require "views/components/header.php"; ?>
-<?php require "views/components/navbar.php"; ?>
+<?php require __DIR__ . "/components/header.php"; ?>
+<?php require __DIR__ . "/components/navbar.php"; ?>
 
 <main class="project-page">
     <section class="project-hero section">
@@ -68,4 +68,4 @@
     <img class="lightbox-image" src="" alt="">
 </div>
 
-<?php require "views/components/footer.php"; ?>
+<?php require __DIR__ . "/components/footer.php"; ?>

@@ -48,5 +48,5 @@ $projects = [
 		"color" => "project-gold",
 	],
 ];
-require "views/index.view.php";
+require __DIR__ . "/../views/index.view.php";
 ?>

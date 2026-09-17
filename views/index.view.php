@@ -1,5 +1,5 @@
-<?php require "views/components/header.php"; ?>
-<?php require "views/components/navbar.php"; ?>
+<?php require __DIR__ . "/components/header.php"; ?>
+<?php require __DIR__ . "/components/navbar.php"; ?>
 
 <main>
 	<section class="hero section" id="sakums">
@@ -143,4 +143,4 @@
 		 <?php endforeach; ?>
 	 </div>
 
-<?php require "views/components/footer.php"; ?>
+<?php require __DIR__ . "/components/footer.php"; ?>

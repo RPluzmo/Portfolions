@@ -160,4 +160,4 @@ if ($project === null) {
 }
 
 $pageTitle = $project["title"] . " | Portfolio";
-require "views/project.view.php";
+require __DIR__ . "/../views/project.view.php";

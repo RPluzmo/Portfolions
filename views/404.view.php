@@ -1,5 +1,5 @@
-<?php require "components/header.php"; ?>
-<?php require "components/navbar.php"; ?>
+<?php require __DIR__ . "/components/header.php"; ?>
+<?php require __DIR__ . "/components/navbar.php"; ?>
 
 <main class="not-found section">
 	<p class="eyebrow">Kļūda 404</p>
@@ -7,4 +7,4 @@
 	<a class="back-link" href="<?= e(url("/")) ?>">Atgriezties sākumlapā</a>
 </main>
 
-<?php require "components/footer.php"; ?>
+<?php require __DIR__ . "/components/footer.php"; ?>
