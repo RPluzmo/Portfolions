@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "builds": [
     {
       "src": "index.php",
@@ -7,8 +8,7 @@
   ],
   "routes": [
     {
-      "src": "/(css|js|assets)/(.*)",
-      "dest": "/$1/$2"
+      "handle": "filesystem"
     },
     {
       "src": "/(.*)",
