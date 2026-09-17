@@ -1,0 +1,72 @@
+const projects = {
+    projekts1: {
+        number: "01",
+        name: "Mysterymeal",
+        title: "Mysterymeal.exe",
+        type: "Projekts",
+        technologies: "Laravel / MySQL / API",
+        description: "Ēdienu ideju un recepšu projekts ar datu bāzi.",
+        detailedDescription: `<i>MysteryMeal.exe</i> ir <b>Laravel un MySQL</b> projekts, kas palīdz lietotājam atrast <b>ēdienu receptes no pieejamajām sastāvdaļām.</b><br><br>Lietotājs ievada produktus, piemēram, vistu, tomātus vai rīsus, un tiek meklētas receptes, kas satur šos produktus. Receptes tiek meklētas gan projekta <b>lokālajā datubāzē</b>, gan <b>Spoonacular ārējā API</b>.<br><br>Lietotājs var norādīt arī maksimālo gatavošanas laiku un izvēlēties, vai parādīt tikai receptes, kurām <b>pieejamas visas sastāvdaļas</b>, vai arī <b>receptes ar dažiem trūkstošiem produktiem</b>. Papildus tam iespējams izmantot <i>Gemini mākslīgo intelektu</i>, kas pēc ievadītajām sastāvdaļām izveido jaunas receptes latviešu valodā.<br><br><b>Reģistrēti lietotāji var saglabāt receptes favorītos</b>, izveidot savas receptes un izmantot mini spēli ar līderu sarakstu. Administratoram ir atsevišķa pārvaldības vide lietotāju, lomu un recepšu pārvaldībai.`,
+        learning: "API integrācija, meklēšana pēc pieprasījuma un MI izmantošana recepšu ieteikumiem.",
+        image: "mysterymeal/mysterymealcover.png",
+        gallery: ["mysterymeal/mysterymeal1.png", "mysterymeal/mysterymeal2.png", "mysterymeal/mysterymeal3.png", "mysterymeal/mysterymeal4.png", "mysterymeal/mysterymeal5.png"],
+        color: "project-sunset",
+        githubUrl: "https://github.com/RPluzmo/DBProgMysteryMeal"
+    },
+    projekts2: {
+        number: "02",
+        name: "EmEks",
+        title: "EmEks Motokrosa kalendārs",
+        type: "Projekts",
+        technologies: "Laravel / MySQL",
+        description: "Vietne, kur sportisti var pieteikties uz treniņiem Latvijas motokrosa trasēs un redzēt citus sportistus.",
+        detailedDescription: `Šis projekts ir <i>Laravel</i> tīmekļa vietne “Motokrosa kalendārs” ar MySQL datubāzi, kas paredzēta motokrosa trašu, sacensību un treniņu pārvaldīšanai.<br><br>Tās <b>galvenais mērķis</b> ir vienuviet parādīt Latvijas motokrosa trases un informāciju par tajās notiekošajiem pasākumiem. Lietotāji var apskatīt trases interaktīvā <i>OpenStreetMap</i> un <i>Leaflet.js</i> kartē.<br><br>Projektā ir sacīkšu kartes skats ar filtrēšanu pēc kategorijām. Treniņu skatā iespējams pieteikties treniņam, norādot ierašanās laiku, motocikla klasi, pieredzes līmeni un klubu.<br><br>Trases saimnieki var rediģēt savas trases datus, sacensības un attēlus, savukārt administratori var pārvaldīt visas trases, lietotājus un sacīkšu kategorijas.`,
+        learning: "Darbs ar kartēm un Leaflet.js marķieriem, izmantojot datubāzes datus.",
+        image: "emeks/emekscover.png",
+        gallery: ["emeks/emeks1.png", "emeks/emeks2.png", "emeks/emeks3.png", "emeks/emeks4.png", "emeks/emeks5.png"],
+        color: "project-sea",
+        githubUrl: "https://github.com/RPluzmo/WebRPNos"
+    },
+    projekts3: {
+        number: "03",
+        name: "Web Muita",
+        title: "WEBMuita RHL",
+        type: "Projekts",
+        technologies: "Laravel / MySQL / API",
+        description: "Muitas projekts, kas apstrādā milzīgu datu apjomu no API un sadala to vairākiem muitas darbiniekiem.",
+        detailedDescription: `Projekts WEBMuita ir <i>Laravel un MySQL</i> vidē izveidota <b>muitas kravu uzskaites un kontroles sistēma</b>. Sistēmas galvenais objekts ir kravas lieta ar unikālu ID, statusu, prioritāti, izcelsmes un galamērķa valsti, transportlīdzekli un dokumentiem.<br><br><b>Brokeris</b> var izveidot jaunu kravu, bet lietotāji var meklēt kravas pēc lietas ID vai automašīnas numura un filtrēt tās pēc statusa, prioritātes un datuma.<br><br><b>Inspektors</b> maina kravas statusu, <b>analītiķis</b> izvērtē riskus, bet administrators pārvalda lietotājus un lomas. Publiskajā daļā iespējams pārbaudīt kravas pašreizējo statusu, maršrutu un pēdējo atjaunināšanas laiku.`,
+        learning: "Liela JSON datu apjoma saņemšana, validēšana un attēlošana lietotāja saskarnē.",
+        image: "web-muita/webmuitacover.png",
+        gallery: ["web-muita/webmuit1.png", "web-muita/webmuita2.png", "web-muita/webmuita3.png", "web-muita/webmuita4.png", "web-muita/webmuita5.png"],
+        color: "project-lavender",
+        githubUrl: "https://github.com/RPluzmo/WEBMuita"
+    },
+    projekts4: {
+        number: "04",
+        name: "Classroom",
+        title: "Classroom",
+        type: "Projekts",
+        technologies: "HTML / CSS / JavaScript / PHP / MySQL",
+        description: "Google Classroom alternatīva.",
+        detailedDescription: `Šis ir pamatā <i>PHP</i> un <i>MySQL</i> datubāzes e-klases projekts, kas paredzēts mācību procesa organizēšanai tiešsaistē.<br><br>Sistēmā ir <b>trīs lietotāju lomas: administrators, skolotājs un skolēns</b>. Skolotājs var izveidot kursus, pievienot uzdevumus, noteikt termiņus un pievienot failus. Skolēns kursam pievienojas ar <b>kursa kodu vai QR kodu</b>, iesniedz darbus un var rakstīt komentārus.<br><br>Administrators pārvalda lietotājus un sistēmas darbības. Lietotāji var rediģēt profilu, pievienot attēlu un pārslēgt gaišo vai tumšo tēmu.`,
+        learning: "Lietotāju saziņa ar komentāriem un skaidra mācību satura organizēšana.",
+        image: "classroom/classroomcover.png",
+        gallery: ["classroom/classroom1.png", "classroom/classroom2.png", "classroom/classroom3.png", "classroom/classroom4.png", "classroom/classroom5.png"],
+        color: "project-mint",
+        githubUrl: "https://github.com/RPluzmo/Classroom"
+    },
+    projekts5: {
+        number: "05",
+        name: "Eklas(e)",
+        title: "EKlas(e)",
+        type: "Projekts",
+        technologies: "HTML / CSS / JavaScript / PHP / MySQL",
+        description: "Eklases attēlojums.",
+        detailedDescription: `Grade Viewer DUO - E-klase ir vienkārša <i>PHP un MySQL</i> aizmugursistēmas tīmekļa sistēma skolēnu mācību rezultātu pārvaldīšanai.<br><br>Tajā ir divas lietotāju lomas: skolēns un skolotājs. <b>Skolēns</b> var apskatīt mācību priekšmetus un vērtējumus, bet <b>skolotājs</b> var pievienot, rediģēt un dzēst skolēnus, priekšmetus un atzīmes.<br><br>Sistēma pārbauda ievadītos datus, ļauj kārtot skolēnus un glabā informāciju MySQL datubāzē.`,
+        learning: "Esošas saskarnes analīze un datu attēlošana ar PHP un MySQL.",
+        image: "eklase/eklasecover.png",
+        gallery: ["eklase/eklase1.png", "eklase/eklase2.png", "eklase/eklase3.png", "eklase/eklase4.png", "eklase/eklase5.png"],
+        color: "project-gold",
+        githubUrl: "https://github.com/RPluzmo/eklas"
+    }
+};

@@ -16,5 +16,5 @@ Ievieto attelus katra projekta mape:
 
 Izmanto PNG formatu un saglaba failus ar precizi siem nosaukumiem.
 
-YouTube video ID ievadi controllers/project.php pie attieciga projekta.
-Piemeram, ja video adrese ir https://www.youtube.com/watch?v=abc123, ID ir abc123.
+Projekta dati atrodas failā `js/projects.js`. Ja nepieciešams pievienot YouTube video,
+papildini attiecīgā projekta datus un renderēšanu failā `js/main.js`.

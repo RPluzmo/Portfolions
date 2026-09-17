@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raivo Plužmo | Portfolio</title>
+    <meta name="description" content="Raivo Plužmo programmēšanas portfolio.">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body data-page="home">
+<header class="site-header">
+    <nav class="main-nav" aria-label="Galvenā navigācija">
+        <a href="#par-mani">Par mani</a>
+        <a href="#prasmes">Prasmes</a>
+        <a href="#projekti">Projekti</a>
+    </nav>
+</header>
+<main>
+    <section class="hero section" id="sakums">
+        <div class="hero-background" aria-hidden="true"><canvas class="hero-stars"></canvas></div>
+        <div class="hero-copy"><p class="eyebrow">Programmēšanas tehniķis</p><h1>Raivo Plužmo</h1><p class="hero-subtitle">Mans programmēšanas portfolio.</p></div>
+        <div class="hero-portrait"><img src="assets/images/hero-portrait.png" alt="attēls ar mani ;)" data-optional-image></div>
+        <div class="hero-side"><span>00</span><p>Portfolio<br>2026</p></div>
+    </section>
+    <section class="about section" id="par-mani">
+        <div class="section-intro"><h3>01 / Par mani</h3><h2>Kas<br><em>es esmu.</em></h2></div>
+        <div class="about-content">
+            <h3 class="lead">Mani sauc <b>Raivo Plužmo</b>, un esmu 4. kursa programmēšanas tehniķa students <b>Vidzemes Tehnoloģiju un dizaina tehnikumā</b>.<br><br>Mani interesē <b>tehnoloģijas un programmēšana</b>, un vēlos savas zināšanas pārvērst praktiskos risinājumos. <b>Man patīk</b> mācīties, darot izmēģināt, kļūdīties, izprast problēmu un atrast risinājumu.<br><br></h3>
+            <h3><b>Ikdienā</b> esmu mierīgs un nosvērts, un man labi padodas patstāvīgs darbs.<br><br>Ja kaut ko nesaprotu, vispirms cenšos pats atrast atbildi un izprast problēmu. <b>Man</b> ir svarīgi, lai paveiktais darbs būtu ne tikai izdarīts, bet arī pārdomāts un vizuāli sakārtots.<br><br>Arī pie šķietami mazām detaļām cenšos piedomāt, jo <b>uzskatu</b>, ka gala rezultāts parāda attieksmi pret paveikto.</h3>
+            <div class="about-facts"><div><span>Izglītība</span><strong>Programmēšanas tehniķis</strong><small>VTDT 2023 — pašlaik</small></div><div><span>Valodas</span><strong>Latviešu / dzimtā</strong><small>Angļu valoda · B2</small></div></div>
+        </div>
+    </section>
+    <section class="skills section" id="prasmes">
+        <div class="section-intro"><h3>02 / Tehnoloģijas</h3><h2>Manas<br><em>prasmes</em></h2><h3>Prasmes, ko attīstu mācībās un savos projektos.</h3></div>
+        <div class="skill-list reveal reveal-delay">
+            <div class="skill-row"><span class="skill-number">01</span><div><h3>Programmēšanas valodas</h3><p>PHP <b>~</b> SQL <b>~</b> JavaScript <b>~</b></p></div></div>
+            <div class="skill-row"><span class="skill-number">02</span><div><h3>Ietvari un bibliotēkas</h3><p>Laravel <b>~</b> React <b>~</b> Leaflet.js</p></div></div>
+            <div class="skill-row"><span class="skill-number">03</span><div><h3>Web tehnoloģijas</h3><p>HTML <b>~</b> CSS</p></div></div>
+            <div class="skill-row"><span class="skill-number">04</span><div><h3>API un datu apstrāde</h3><p>REST API <b>~</b> JSON</p></div></div>
+            <div class="skill-row"><span class="skill-number">05</span><div><h3>Tehnoloģijas</h3><p>MySQL datubāzes <b>~</b> Git versiju kontrole</p></div></div>
+            <div class="skill-row"><span class="skill-number">06</span><div><h3>Kartes un ģeodati</h3><p>OpenStreetMap integrācija</p></div></div>
+        </div>
+    </section>
+    <section class="projects section" id="projekti">
+        <div class="projects-heading reveal"><div><h3>03 / Izvēlētie darbi</h3><h2>Mani <em>projekti.</em></h2></div></div>
+        <div class="project-grid reveal reveal-delay" aria-label="Projektu galerija"></div>
+    </section>
+</main>
+<footer class="site-footer"><div class="footer-intro"><a href="https://github.com/RPluzmo" target="_blank" rel="noreferrer">Mans GitHub profils <span aria-hidden="true">↗</span></a></div><div class="footer-contact"><p>Kontaktinformācija</p><p><a href="tel:+37126208968">+371 26 208 968</a></p><p><a href="mailto:raivo.pluzmo@gmail.com">raivo.pluzmo@gmail.com</a></p></div></footer>
+<script src="js/projects.js" defer></script><script src="js/main.js" defer></script>
+</body>
+</html>
