@@ -51,3 +51,16 @@ function dd(mixed $data): never
     echo "</pre>";
     die();
 }
+
+function view(string $path, array $attributes = []): void
+{
+    extract($attributes);
+    
+    $fullPath = __DIR__ . "/views/" . ltrim($path, "/");
+
+    if (!file_exists($fullPath)) {
+        throw new Exception("Skata fails neeksistē: {$fullPath}");
+    }
+
+    require $fullPath;
+}
